@@ -1,32 +1,41 @@
 // import logo from "./logo.svg";
+import { useEffect, useState } from "react";
+import "./App.css";
 // import "./App.css";
 // import Timer from "./components/Timer";
 // import InfiniteScroll from "./components/InfiniteScroll";
 // import InfiniteScroll2 from "./components/InfiniteScroll2";
 // import FilterItems from "./components/FilterItems";
 // import TodoList from "./components/TodoList";
-// import StopWatch from "./components/StopWatch";
+import StopWatch from "./components/StopWatch";
 // import FileExplorer from "./components/FileExplorer";
 // import StarRating from "./components/StarRating";
 // import LazyImage from "./components/LazyImage";
 import Main from "./components/ShoppingCart/main";
-
+import SnakeLadderGame from "./components/snakeLadderGame";
+import Tictactoe from "./components/Tictactoe";
+import ProgressBar from "./components/ProgressBar";
+// import HolyGrail from "./components/holyGrail";
 function App() {
   return (
     <div className="App">
-      <Main />
+      {/* <Main /> */}
       {/* <Timer /> */}
       {/* <hr /> */}
       {/* <InfiniteScroll />
       <InfiniteScroll2/> */}
       {/* <FilterItems /> */}
       {/* <TodoList /> */}
-      {/* <StopWatch /> */}
+      <StopWatch />
       {/* <FileExplorer /> */}
       {/* <StarRating /> */}
       {/* {images.map((ele) => (
         <LazyImage src={ele} alt={"NO image found"} />
       ))} */}
+      {/* <SnakeLadderGame /> */}
+      {/* <Tictactoe /> */}
+      {/* <ProgressBar /> */}
+      {/* <HolyGrail /> */}
     </div>
   );
 }
