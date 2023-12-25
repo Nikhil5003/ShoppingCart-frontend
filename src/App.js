@@ -7,15 +7,18 @@ import "./App.css";
 // import InfiniteScroll2 from "./components/InfiniteScroll2";
 // import FilterItems from "./components/FilterItems";
 // import TodoList from "./components/TodoList";
-import StopWatch from "./components/StopWatch";
+// import StopWatch from "./components/StopWatch";
 // import FileExplorer from "./components/FileExplorer";
 // import StarRating from "./components/StarRating";
 // import LazyImage from "./components/LazyImage";
-import Main from "./components/ShoppingCart/main";
-import SnakeLadderGame from "./components/snakeLadderGame";
-import Tictactoe from "./components/Tictactoe";
-import ProgressBar from "./components/ProgressBar";
+// import Main from "./components/ShoppingCart/main";
+// import SnakeLadderGame from "./components/snakeLadderGame";
+// import Tictactoe from "./components/Tictactoe";
+// import ProgressBar from "./components/ProgressBar";
 // import HolyGrail from "./components/holyGrail";
+import TrafficLight from "./components/TrafficLight";
+import Clock from "./components/Clock";
+import AnalogClock from "./components/AnalogClock";
 function App() {
   return (
     <div className="App">
@@ -26,7 +29,7 @@ function App() {
       <InfiniteScroll2/> */}
       {/* <FilterItems /> */}
       {/* <TodoList /> */}
-      <StopWatch />
+      {/* <StopWatch /> */}
       {/* <FileExplorer /> */}
       {/* <StarRating /> */}
       {/* {images.map((ele) => (
@@ -36,6 +39,9 @@ function App() {
       {/* <Tictactoe /> */}
       {/* <ProgressBar /> */}
       {/* <HolyGrail /> */}
+      {/* {<Clock />} */}
+      {/* <TrafficLight /> */}
+      <AnalogClock />
     </div>
   );
 }
