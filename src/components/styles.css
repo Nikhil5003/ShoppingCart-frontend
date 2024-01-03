@@ -25,7 +25,7 @@
   }
   
   .active {
-    border: 2px solid black; /* You can customize the border style for the active light */
+    border:10px solid black; /* You can customize the border style for the active light */
   }
   
   

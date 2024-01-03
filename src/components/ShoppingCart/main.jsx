@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Cart from "./Cart";
 import Context from "./Context/Context";
+import "./styles.css";
 const Main = () => {
   return (
     <BrowserRouter>

@@ -1,6 +1,8 @@
 // import logo from "./logo.svg";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
+import NestedCheckBox from "./components/NestedCheckBox";
+import CommentSection from "./components/CommentSection";
 // import "./App.css";
 // import Timer from "./components/Timer";
 // import InfiniteScroll from "./components/InfiniteScroll";
@@ -16,12 +18,59 @@ import "./App.css";
 // import Tictactoe from "./components/Tictactoe";
 // import ProgressBar from "./components/ProgressBar";
 // import HolyGrail from "./components/holyGrail";
-import TrafficLight from "./components/TrafficLight";
-import Clock from "./components/Clock";
-import AnalogClock from "./components/AnalogClock";
+// import TrafficLight from "./components/TrafficLight";
+// import Clock from "./components/Clock";
+// import ResponsiveComponent from "./components/Responsive";
+// import AnalogClock from "./components/AnalogClock";
 function App() {
+  const config = [
+    {
+      label: "Parent1",
+      id: 1,
+      children: [
+        {
+          label: "Child p1.c1",
+          id: 2,
+          children: [
+            {
+              label: "nikhil",
+              id: 10,
+              children: [
+                {
+                  label: "aksh",
+                  id: 13,
+                },
+                {
+                  label: "sharma",
+                  id: 12,
+                },
+              ],
+            },
+            {
+              label: "Attri",
+              id: 11,
+            },
+          ],
+        },
+        {
+          label: "Child p1.c2",
+          id: 3,
+        },
+        {
+          label: "Childp1.c3",
+          id: 4,
+        },
+      ],
+    },
+    {
+      label: "Parent2",
+      id: 5,
+    },
+  ];
+
   return (
     <div className="App">
+      <NestedCheckBox config={config} />
       {/* <Main /> */}
       {/* <Timer /> */}
       {/* <hr /> */}
@@ -36,12 +85,15 @@ function App() {
         <LazyImage src={ele} alt={"NO image found"} />
       ))} */}
       {/* <SnakeLadderGame /> */}
-      {/* <Tictactoe /> */}
-      {/* <ProgressBar /> */}
+      {/* <Tictactoe />
+     
       {/* <HolyGrail /> */}
       {/* {<Clock />} */}
       {/* <TrafficLight /> */}
-      <AnalogClock />
+      {/* <AnalogClock /> */}
+      {/* <ProgressBar /> */}
+      {/* <ResponsiveComponent /> */}
+      <CommentSection />
     </div>
   );
 }

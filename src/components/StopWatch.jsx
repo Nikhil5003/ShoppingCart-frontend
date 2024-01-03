@@ -5,7 +5,7 @@ const StopWatch = () => {
   const [time, setTime] = useState(0);
   const seconds = Math.floor(time % 60);
   const minutes = Math.floor((time / 60) % 60);
-  const hours = Math.floor((time / 3600) % 60);
+  const hours = Math.floor((time / 3600) % 12);
   const [timerStart, setTimerStart] = useState(false);
   const startTimer = () => {
     setTimerStart(!timerStart);
@@ -19,7 +19,7 @@ const StopWatch = () => {
     if (timerStart) {
       interval = setInterval(() => {
         setTime((time) => time + 1);
-      }, 100);
+      }, 10);
     } else {
       clearInterval(interval);
     }

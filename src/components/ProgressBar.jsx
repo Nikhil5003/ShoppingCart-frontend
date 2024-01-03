@@ -32,7 +32,7 @@ const ProgressBar = () => {
           style={{ width: `${progress}%` }}
         ></div>
         <div className="text">
-          {progress < 10 ? progress + "0" + "%" : progress + "%"}
+          {progress < 10 ? "0" + progress + "%" : progress + "%"}
         </div>
       </div>
       <div
