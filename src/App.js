@@ -1,8 +1,9 @@
 // import logo from "./logo.svg";
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import NestedCheckBox from "./components/NestedCheckBox";
-import CommentSection from "./components/CommentSection";
+// import NestedCheckBox from "./components/NestedCheckBox";
+// import CommentSection from "./components/CommentSection";
+import CancelApi from "./components/CancelApi";
 // import "./App.css";
 // import Timer from "./components/Timer";
 // import InfiniteScroll from "./components/InfiniteScroll";
@@ -70,7 +71,7 @@ function App() {
 
   return (
     <div className="App">
-      <NestedCheckBox config={config} />
+      {/* <NestedCheckBox config={config} /> */}
       {/* <Main /> */}
       {/* <Timer /> */}
       {/* <hr /> */}
@@ -93,7 +94,8 @@ function App() {
       {/* <AnalogClock /> */}
       {/* <ProgressBar /> */}
       {/* <ResponsiveComponent /> */}
-      <CommentSection />
+      {/* <CommentSection /> */}
+      <CancelApi />
     </div>
   );
 }
